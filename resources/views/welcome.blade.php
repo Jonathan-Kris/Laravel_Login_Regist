@@ -27,7 +27,7 @@
         <h3>2301942210 - Elizabeth Ann Soelistio</h3>
         <h3>2301905373 - Rico Nelson</h3>
         <h3>2301870350 - Chrismorgan Shintaro</h3>
-
+        <a href="/register"><button>Go to Register</button></a>
         <a href="/login"><button>Go to Login</button></a>
     </body>
 </html>
