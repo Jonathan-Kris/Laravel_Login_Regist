@@ -25,13 +25,13 @@
             h1{
                 margin-top: 7rem;
                 color: black;
-                margin-left: 25rem;
+                /* margin-left: 25rem; */
                 font-family: 'Times New Roman', Times, serif;
             }
 
             h3{
                 color: black;
-                margin-left: 20rem;
+                /* margin-left: 20rem; */
                 font-family: 'Nunito', sans-serif;
             }
 
@@ -44,23 +44,17 @@
                 text-decoration: none;
                 display: inline-block;
                 font-size: 16px;
-                margin-left: 20rem;
                 border-radius: 2rem;
-            }
-
-            .button2{
-                background-color: blue;
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                border-radius: 2rem;
-                
+                margin: .5vh 0 .5vh 0;
             }
 
             .antialiased{
                 background-color: whitesmoke;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                flex-direction: column;
             }
             
 
@@ -75,6 +69,6 @@
         <h3>2301905373 - Rico Nelson</h3>
         <h3>2301870350 - Chrismorgan Shintaro</h3>
         <a href="/register" class="button">Go to Register</a>
-        <a href="/login" class="button2">Go to Login</a>
+        <a href="/login" class="button">Go to Login</a>
     </body>
 </html>
