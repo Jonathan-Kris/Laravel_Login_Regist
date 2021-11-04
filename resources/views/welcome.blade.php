@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+      
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,6 +20,52 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
+
+        <style>
+            h1{
+                margin-top: 7rem;
+                color: black;
+                margin-left: 25rem;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            h3{
+                color: black;
+                margin-left: 20rem;
+                font-family: 'Nunito', sans-serif;
+            }
+
+            .button{
+                background-color: blue; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin-left: 20rem;
+                border-radius: 2rem;
+            }
+
+            .button2{
+                background-color: blue;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 2rem;
+                
+            }
+
+            .antialiased{
+                background-color: whitesmoke;
+            }
+            
+
+        </style>
+
     </head>
     <body class="antialiased">
         <h1>Created By</h1>
@@ -27,7 +74,7 @@
         <h3>2301942210 - Elizabeth Ann Soelistio</h3>
         <h3>2301905373 - Rico Nelson</h3>
         <h3>2301870350 - Chrismorgan Shintaro</h3>
-        <a href="/register"><button>Go to Register</button></a>
-        <a href="/login"><button>Go to Login</button></a>
+        <a href="/register" class="button">Go to Register</a>
+        <a href="/login" class="button2">Go to Login</a>
     </body>
 </html>
