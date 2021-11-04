@@ -16,9 +16,13 @@
 
 ## Created By
 2301860154 - Jonathan Kristanto
+
 2301859650 - Cornelius Tantius
+
 2301905373 - Rico Nelson
+
 2301870350 - Chrismorgan Shintaro
+
 2301942210 - Elizabeth Ann Soelistio
 
 Source : https://stackoverflow.com/questions/38437072/setup-laravel-project-after-cloning
