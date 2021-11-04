@@ -7,7 +7,7 @@
     <title>Register</title>
 </head>
 <body>
-    <form action="">
+    <form method="POST" action="/api/register">
         @csrf
         <table>
             <tr>
@@ -23,6 +23,15 @@
                 <td><input type="password" id="password" name="password" placeholder="password"></td>
             </tr>
         </table>
+        <button type="submit">Register !</button>
     </form>
+    @if($errors->any())
+        <table>
+            <tr>Error while registering:</tr>
+            @foreach ($errors->all() as $error)
+                <tr><li style="color:red">{{ $error }}</li></tr>
+            @endforeach
+        </table>
+    @endif
 </body>
 </html>

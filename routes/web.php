@@ -27,3 +27,4 @@ Route::get('/login', function () {
 });
 
 Route::get('/register', [RegisterController::class, "index"]);
+Route::post('/api/register', [RegisterController::class, "val"]);
