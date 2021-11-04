@@ -9,7 +9,7 @@
 
 ## How to Run the repo
 1. Run composer install to generate depedencies in vendor folder
-2. Change .env.example to .env
+2. Create .env file in the root of the project (next to .env.example)
 3. Run php artisan key:generate
 4. Configure .env
 5. Run using php artisan serve, and voila
