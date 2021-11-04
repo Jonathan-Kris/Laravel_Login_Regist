@@ -23,12 +23,8 @@
             @csrf
             <table>
                 <tr>
-                    <td><label for="name">Name</label></td>
-                    <td><input type="text" id="name" name="name" placeholder="Name"></td>
-                </tr>
-                <tr>
-                    <td><label for="name">Age</label></td>
-                    <td><input type="text" id="age" name="age" placeholder="18"></td>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Sensei@email.com"></td>
                 </tr>
                 <tr>
                     <td><label for="name">Password</label></td>
@@ -38,5 +34,15 @@
             <button type="submit">Login</button>
         </form>
     </div>
+    <a href="/home"><button>Go Back</button></a>
+
+    @if($errors->any())
+        <table>
+            <tr>Error while login:</tr>
+            @foreach ($errors->all() as $error)
+                <tr><li style="color:red">{{ $error }}</li></tr>
+            @endforeach
+        </table>
+    @endif
 </body>
 </html>

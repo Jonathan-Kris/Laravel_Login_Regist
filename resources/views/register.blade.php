@@ -7,6 +7,7 @@
     <title>Register</title>
 </head>
 <body>
+    <h1>LOGIN</h1>
     <form method="POST" action="/api/register">
         @csrf
         <table>
@@ -24,7 +25,10 @@
             </tr>
         </table>
         <button type="submit">Register !</button>
+        <a href="/home"><button>Go Back</button></a>
     </form>
+
+
     @if($errors->any())
         <table>
             <tr>Error while registering:</tr>
