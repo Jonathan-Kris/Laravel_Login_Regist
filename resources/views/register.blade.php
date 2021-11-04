@@ -25,9 +25,9 @@
             </tr>
         </table>
         <button type="submit">Register !</button>
-        <a href="/home"><button>Go Back</button></a>
     </form>
 
+    <button onclick="location.href = 'home';">Go Back</button>
 
     @if($errors->any())
         <table>
