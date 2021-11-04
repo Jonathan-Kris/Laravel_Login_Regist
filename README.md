@@ -12,5 +12,6 @@
 2. Change .env.example to .env
 3. Run php artisan key:generate
 4. Configure .env
+5. Run using php artisan serve, and voila
 
 Source : https://stackoverflow.com/questions/38437072/setup-laravel-project-after-cloning
