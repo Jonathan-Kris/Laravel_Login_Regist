@@ -43,13 +43,23 @@
         <form action="/login" method="POST">
             @csrf
             <div class="form-floating">
-                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="name@example.com" autofocus value="{{ old('email') }}">
                 <label for="floatingInput">Email address</label>
+                @error('email')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
             </div>
 
             <div class="form-floating">
-                <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Password">
                 <label for="floatingPassword">Password</label>
+                @error('password')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
             </div>
 
             <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
@@ -59,7 +69,7 @@
         <small class="d-block text-center mt-3"> Not Registered? <a href="register"> Register Now!</a></small>
         <p class="mt-5 mb-3 text-muted">&copy; November 2021</p>
 
-        @if($errors->any())
+        {{-- @if($errors->any())
         <table>
             <tr>Error while login:</tr>
             @foreach ($errors->all() as $error)
@@ -68,7 +78,7 @@
             </tr>
             @endforeach
         </table>
-        @endif
+        @endif --}}
     </main>
 </body>
 
