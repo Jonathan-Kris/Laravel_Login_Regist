@@ -5,6 +5,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -22,6 +28,12 @@
         </style>
 
         <style>
+
+            .alert-notification-can-close{
+                position: absolute;
+                top: 2%;
+            }
+
             h1{
                 margin-top: 7rem;
                 color: black;
@@ -48,6 +60,10 @@
                 margin: .5vh 0 .5vh 0;
             }
 
+            .button:hover{
+                color: #a0aec0;
+            }
+
             .antialiased{
                 background-color: whitesmoke;
                 display: flex;
@@ -62,6 +78,15 @@
 
     </head>
     <body class="antialiased">
+        @if(session()->has('success'))
+            <div class="alert alert-success alert-dismissible fade show alert-notification-can-close" role="alert">
+                {{ session( 'success' )}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+            
+        @endif
+
         <h1>Created By</h1>
         <h3>2301860154 - Jonathan Kristanto</h3>
         <h3>2301859650 - Cornelius Tantius</h3>
