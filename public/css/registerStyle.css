@@ -18,8 +18,9 @@ body {
     margin: auto;
 }
 
-.form-register .checkbox {
-    font-weight: 400;
+.error-message{
+    text-align: left;
+    margin-top: -2px;
 }
 
 .form-register .form-floating:focus-within {
@@ -31,17 +32,22 @@ body {
     border-bottom-right-radius: 0;
 }
 
-.form-register input[type="number"] {
+.form-register input[type="number"], .form-register input[type="email"] {
     margin: -1px 0px;
     border-radius: 0;
 }
 
 .form-register input[type="password"] {
-    margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
 
 .register-button{
+    margin-top: 10px;
     margin-bottom: 5px;
+}
+
+.copyright-bottom{
+    position: absolute;
+    bottom: 1%;
 }

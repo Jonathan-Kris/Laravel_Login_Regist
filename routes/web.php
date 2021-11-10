@@ -31,4 +31,4 @@ Route::get('/login',  [LoginController::class, "index"]);
 Route::post('/login',  [LoginController::class, "login"]);
 
 Route::get('/register', [RegisterController::class, "index"]);
-Route::post('/api/register', [RegisterController::class, "val"]);
+Route::post('/api/register', [RegisterController::class, "val_and_store"]);
