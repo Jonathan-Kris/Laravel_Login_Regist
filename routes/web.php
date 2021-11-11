@@ -30,5 +30,8 @@ Route::get('/about', function () {
 Route::get('/login',  [LoginController::class, "index"]);
 Route::post('/login',  [LoginController::class, "login"]);
 
+Route::get('/auth/google/redirect', [GoogleAuthController::class, "redirectToGoogle"]);
+Route::get('/auth/google/callback', [GoogleAuthController::class, "handleGoogleCallback"]);
+
 Route::get('/register', [RegisterController::class, "index"]);
 Route::post('/api/register', [RegisterController::class, "val_and_store"]);
